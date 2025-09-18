@@ -4,5 +4,6 @@ data:
  
 kind: ConfigMap
 metadata:
-  name: techtrends-latest
+#  name: techtrends-latest
   namespace: {{ .Values.namespace.name }} 
+
