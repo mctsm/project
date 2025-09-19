@@ -1,4 +1,4 @@
-# set up the default terminal
+# set up the default terminal -
 ENV["TERM"]="linux"
 
 # set minimum version for Vagrant
@@ -28,3 +28,4 @@ Vagrant.configure("2") do |config|
     vb.customize ["modifyvm", :id, "--ioapic", "on"]
   end
 end
+
