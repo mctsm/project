@@ -34,13 +34,13 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
 # • Push the image to DockerHub with the tag techtrends:latest  
-
       name: Build and push
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./Dockerfile
-#         file: ./techtrends/Dockerfile
+#          file: ./Dockerfile
+         file: ./techtrends/Dockerfile
           platforms: linux/amd64
           push: true
           tags: mctsm/techtrends:latest
+
